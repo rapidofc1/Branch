@@ -64,7 +64,7 @@ let args = msg.content.split(" ").slice(1);
 
     if (msg.mentions.users.first === msg.author)
       return msg.channel.send("ERR: You can't ban yourself!")
-
+      // The real error is that your doing the same code x2, but in different ways. *facepalm*
       if(msg.author.id === msg.mentions.users.first().id)
         return msg.channel.send("ERR: You can't ban yourself!")
 
