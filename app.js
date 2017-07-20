@@ -39,16 +39,7 @@ if (msg.content.startsWith(prefix + 'help')) {
 .addField("kick", "Kicks the user specified")
 
 msg.channel.send({embed});
-  }
-
-  if (msg.content.startsWith(prefix + 'prefix')) {
-    const embed = new Discord.RichEmbed()
-    .setTitle("**Current Prefix**")
-    .setColor(0x00a5ff)
-    .addField("The current prefix is:", "`!!`")
-
-    msg.channel.send({embed});
-  }
+}
 
 let args = msg.content.split(" ").slice(1);
 
