@@ -10,7 +10,7 @@ client.on('ready', () => {
 const prefix = "!!";
 
 const answers = [
-  'Hell yeah!', 'Maybe', 'Huhmmm', 'I\'m not too sure', 'Without a doubt', 'Never!'
+  'Hell yeah!', 'Yeaaah I dunno', 'Yes', 'Nigga idfk!!', 'Sure whatever...', 'Maybe', 'Huhmmm', 'I\'m not too sure', 'Without a doubt', 'Never!'
 ]
 
 client.on('message', msg => {
@@ -30,11 +30,11 @@ client.on('message', msg => {
 
 if (msg.content.startsWith(prefix + 'help')) {
   const embed = new Discord.RichEmbed()
-.setTitle("<yourBotNameHere> Help Menu")
+.setTitle("Here is the help menu")
 .setColor(0x36393e)
-.addField("ping", "Hmm, wonder what this does?")
-.addField("8ball", "Ask the magic 8ball a question!")
-.addField("prefix", "Shows Branch's current prefix")
+.addField("ping", "Who knows tbh.")
+.addField("8ball", "Ask the magic 8ball a question m8.")
+.addField("prefix", "Shows the bots current prefix")
 .addField("ban", "Bans the user specified")
 .addField("kick", "Kicks the user specified")
 
